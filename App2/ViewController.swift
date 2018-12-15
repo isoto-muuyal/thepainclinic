@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainLogo: UIImageView!
+    
+    @IBOutlet var mainView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("Image loaddd")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +26,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    @IBAction func goToHome(_ sender: Any) {
+        
+        print("Button Pressed")
+        
+    }
+    
 }
 

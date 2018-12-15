@@ -1,24 +1,888 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="LtG-1u-vbv">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--The Clinic Pain-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="V4i-uR-Ec1">
+                                <rect key="frame" x="-8" y="33" width="67" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40493210289999998" green="1" blue="0.32783575180000002" alpha="0.43186069539999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZE-fO-uHE"/>
+                                    <segue destination="3u3-3D-zWT" kind="modal" id="tPt-RD-hH6"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Clients" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Li7-2b-vyp">
+                                <rect key="frame" x="127" y="212" width="515" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="The Clinic Pain" id="8nt-et-nhI"/>
+                    <connections>
+                        <outlet property="mainLogo" destination="Li7-2b-vyp" id="Mqq-wk-TI7"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="poW-aP-MWP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-26" y="161"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="5x0-rm-bP1">
+            <objects>
+                <viewController id="3u3-3D-zWT" customClass="MainViewController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7C-Wj-3Cw">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEW-portada" id="rGE-In-HVQ">
+                                <rect key="frame" x="-181" y="-112" width="1114" height="1299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qdw-6Q-05F" userLabel="Button control de dolor">
+                                <rect key="frame" x="0.0" y="529" width="768" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="6Vu-jZ-FrT" kind="push" id="ERX-9B-0XS"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" id="17d-la-nHt">
+                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="k8x-dx-7ef">
+                                        <barButtonItem key="backBarButtonItem" title="Atras" id="FVO-Cs-4TF"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s2O-J3-mzt">
+                                <rect key="frame" x="586" y="670" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Page View Controller Test"/>
+                                <connections>
+                                    <segue destination="q5F-Ih-HPN" kind="push" id="tcC-Ru-jyA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="euK-ux-jQm" userLabel="Button registro">
+                                <rect key="frame" x="586" y="78" width="141" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rOc-kr-bho" kind="push" id="FWH-gd-dZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Sl-zk-H9i" userLabel="Button control de peso">
+                                <rect key="frame" x="0.0" y="868" width="768" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="z4g-6Z-mug" kind="push" id="OPc-je-ltc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="J8p-sW-Sq7" userLabel="Button medicina estetica">
+                                <rect key="frame" x="0.0" y="756" width="762" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="dR4-2p-HHP" kind="push" id="Hnm-lH-KsX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.92156862745098034" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="19E-28-grv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLd-Hs-VPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2335" y="-1196"/>
+        </scene>
+        <!--Registro-->
+        <scene sceneID="vw9-el-aBt">
+            <objects>
+                <viewController title="Registro" id="rOc-kr-bho" customClass="FormController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ya-nM-P2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="7by-aO-Mc5">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleAspectFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="center" minimumFontSize="17" id="I7e-25-Mcf">
+                                        <rect key="frame" x="25" y="316" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clients" id="xlm-8U-NAc">
+                                        <rect key="frame" x="426" y="136" width="173" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="oND-HA-4he">
+                                        <rect key="frame" x="-23" y="361" width="768" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="562836355.99584401">
+                                            <!--2018-11-02 07:25:55 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Domicilio" textAlignment="center" minimumFontSize="17" id="lH0-WS-CqS">
+                                        <rect key="frame" x="25" y="503" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleAspectFill" misplaced="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="center" minimumFontSize="17" id="ep9-kU-GA4">
+                                        <rect key="frame" x="22" y="458" width="969" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefono" textAlignment="center" minimumFontSize="17" id="TAG-ZK-8KV">
+                                        <rect key="frame" x="25" y="549" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parentesco" textAlignment="center" minimumFontSize="17" id="Da8-VR-ByQ">
+                                        <rect key="frame" x="22" y="872" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefono" textAlignment="center" minimumFontSize="17" id="CvJ-wx-6wq">
+                                        <rect key="frame" x="22" y="917" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dvv-UW-Hge">
+                                        <rect key="frame" x="23" y="1300" width="984" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.67436363060000004" green="0.69979776439999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Imprimir">
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enfermedades" textAlignment="center" minimumFontSize="17" id="8eD-K0-atg">
+                                        <rect key="frame" x="23" y="639" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electornico" textAlignment="center" minimumFontSize="17" id="8mW-B5-csu">
+                                        <rect key="frame" x="23" y="594" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Domicilio" textAlignment="center" minimumFontSize="17" id="9Zy-iE-JsV">
+                                        <rect key="frame" x="23" y="962" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electornico" textAlignment="center" minimumFontSize="17" id="5rC-cx-RfN">
+                                        <rect key="frame" x="23" y="1007" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alergias" textAlignment="center" minimumFontSize="17" id="kZU-dr-ua1">
+                                        <rect key="frame" x="23" y="684" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medicamentos que toma actualmente" textAlignment="center" minimumFontSize="17" id="5xB-7b-EVm">
+                                        <rect key="frame" x="26" y="729" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="center" minimumFontSize="17" id="SYa-87-pZn">
+                                        <rect key="frame" x="23" y="827" width="979" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="jek-5A-v6r">
+                                        <rect key="frame" x="348" y="1062" width="643" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="En caso de emergencia contactar a:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BxJ-zR-ySD">
+                                        <rect key="frame" x="25" y="778" width="560" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Cómo se entero de the clinic?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7si-3q-cab">
+                                        <rect key="frame" x="23" y="1067" width="314" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Cómo le gustaría que nos comunicáramos con usted?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PF8-lb-a1g">
+                                        <rect key="frame" x="26" y="1118" width="560" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" misplaced="YES" id="Sgw-dD-QZ9">
+                                        <rect key="frame" x="-33" y="1153" width="768" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f6L-aa-d64">
+                                        <rect key="frame" x="26" y="1232" width="965" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">*Toda la información que nos proporcione es totalmente confidencial y de uso exclusivo para The Clinic según los articulos No. 15 y 16 de La Ley Federal De Protección De Datos Personales En Posesión de Particulares.*</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79607843140000001" green="0.86274509799999999" blue="0.94509803920000002" alpha="0.67085717430000003" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="uGE-Si-MDA"/>
+                    <connections>
+                        <outlet property="contactMethodPicker" destination="Sgw-dD-QZ9" id="hF1-VQ-cP6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRw-NY-sWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="1236"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fnQ-6d-gmx">
+            <objects>
+                <viewController id="6Vu-jZ-FrT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXc-yB-yYP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEW-control-de-peso" id="NPC-iC-oxK">
+                                <rect key="frame" x="-167" y="-104" width="1106" height="1292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M0s-p5-SOo" userLabel="Button - colocacion de globo gastrico">
+                                <rect key="frame" x="43" y="565" width="705" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="40d-eh-rjN" kind="push" id="5ly-Mn-aT7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Nb-fJ-fil" userLabel="Button - asesoria nutricional">
+                                <rect key="frame" x="43" y="688" width="705" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="y3v-Bp-Tsb" kind="push" id="lww-sx-1lc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gk2-XG-5sC" userLabel="Button - supervicion medica">
+                                <rect key="frame" x="43" y="807" width="705" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KO9-dw-WD0" kind="push" id="hvX-0G-7gk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e1d-No-n1K" userLabel="Button - aparatologia estetica">
+                                <rect key="frame" x="43" y="928" width="705" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="o3x-xx-XiI" kind="push" id="klD-wZ-CKx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="18N-fO-K41">
+                                <rect key="frame" x="600" y="98" width="116" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3u3-3D-zWT" kind="push" id="Bbh-VQ-TXb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.91764705882352937" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JvJ-g4-eYG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4C-H7-mI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3666" y="-1630"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mz1-8W-yYH">
+            <objects>
+                <viewController restorationIdentifier="page2" storyboardIdentifier="page2" id="gCK-Y5-GUC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ka1-f2-Csc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tratamientos" id="Y77-XL-ri3">
+                                <rect key="frame" x="158" y="147" width="708" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" misplaced="YES" text="..dfgdsfgsdfgsdfg" textAlignment="justified" adjustsFontForContentSizeCategory="YES" id="BaX-tT-Uoh">
+                                <rect key="frame" x="102" y="812" width="821" height="445"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.89803921568627454" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="description" destination="BaX-tT-Uoh" id="K8k-60-6In"/>
+                        <outlet property="image" destination="Y77-XL-ri3" id="VWV-qz-zQ2"/>
+                        <outlet property="lblDescription" destination="BaX-tT-Uoh" id="U9s-45-5UM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goR-P6-o5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="2425"/>
+        </scene>
+        <!--One-->
+        <scene sceneID="TjD-En-cgb">
+            <objects>
+                <viewController storyboardIdentifier="CPMOne" id="76V-UY-fgq" customClass="CPMOne" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="klJ-Et-1Ok">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="DcV-30-k8K">
+                                <rect key="frame" x="158" y="152" width="708" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" misplaced="YES" text="..." textAlignment="justified" adjustsFontForContentSizeCategory="YES" id="xXO-qf-Z7f">
+                                <rect key="frame" x="102" y="763" width="821" height="445"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xn4-SK-3Dl"/>
+                    <connections>
+                        <outlet property="CPMOneImage" destination="DcV-30-k8K" id="q7s-QN-dbG"/>
+                        <outlet property="CPMOneText" destination="xXO-qf-Z7f" id="3PQ-mf-oqi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdA-rx-peU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3841" y="2782"/>
+        </scene>
+        <!--Epilepsy Controller-->
+        <scene sceneID="cqa-Rc-tPt">
+            <objects>
+                <viewController id="40d-eh-rjN" customClass="EpilepsyController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tFs-lH-XD9">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="epilepsyBig" id="Bcs-09-Eow">
+                                <rect key="frame" x="43" y="53" width="682" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qio-uD-Tbt">
+                                <rect key="frame" x="43" y="651" width="821" height="447"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">La epilepsia es un trastorno cerebral en el cual una persona tiene convulsiones repetidas durante un tiempo. Las crisis convulsivas son episodios de actividad descontrolada y anormal de las neuronas que puede causar cambios en la atención o el comportamiento.
+
+Causas
+La epilepsia ocurre cuando los cambios en el tejido cerebral hacen que el cerebro están demasiado excitables o irritables. Como resultado de esto, el cerebro envía señales anormales, lo cual ocasiona convulsiones repetitivas e impredecibles. (Una sola convulsión que no sucede de nuevo no es epilepsia).</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ObZ-wk-kAC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tSI-17-18L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5009" y="-2374"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="89C-jD-e8M">
+            <objects>
+                <viewController id="o3x-xx-XiI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pyi-aH-4XA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="esclerosis_multiple_big" id="3US-ir-kfa">
+                                <rect key="frame" x="150" y="235" width="724" height="538"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vA4-iv-ew3">
+                                <rect key="frame" x="111" y="801" width="822" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">La esclerosis múltiple (EM) es una enfermedad del sistema nervioso que afecta al cerebro y la médula espinal. Lesiona la vaina de mielina, el material que rodea y protege las células nerviosas. La lesión hace más lentos o bloquea los mensajes entre el cerebro y el cuerpo, conduciendo a los síntomas de la EM. Los mismos pueden incluir:
+
+Alteraciones de la vista
+Debilidad muscular
+Problemas con la coordinación y el equilibrio
+Sensaciones como entumecimiento, picazón o pinchazos
+Problemas con el pensamiento y la memoria
+Nadie conoce la causa de la EM. Puede ser una enfermedad autoinmune, que ocurre cuando el cuerpo se ataca a sí mismo. La esclerosis múltiple afecta más a las mujeres que a los hombres. Suele comenzar entre los 20 y los 40 años. Generalmente, la enfermedad es leve, pero algunas personas pierden la capacidad para escribir, hablar o caminar. No existe una cura para la EM, pero las medicinas pueden hacer más lento el proceso y ayudar a controlar los síntomas. La fisioterapia y la terapia ocupacional también pueden ayudar</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pne-zu-0dW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAf-4f-TYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4843" y="-353"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PkB-pi-lIY">
+            <objects>
+                <viewController id="KO9-dw-WD0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDl-Eo-j9K">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="encefelapoatia_grande" id="3AL-qO-RYj">
+                                <rect key="frame" x="150" y="210" width="724" height="538"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zl0-WB-aeT">
+                                <rect key="frame" x="125" y="789" width="775" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Encefalopatía hepática
+La pérdida de la función cerebral ocurre cuando el hígado ya no es capaz de eliminar las toxinas de la sangre. Esto se conoce como encefalopatía hepática (HE, por sus siglas en inglés). El problema puede presentarse repentinamente o puede desarrollarse lentamente con el tiempo.
+
+Causas
+Una función importante del hígado es transformar en el cuerpo sustancias tóxicas en inofensivas. Estas sustancias pueden ser producidas por el cuerpo (amoníaco) o puede haber sustancias que usted consume (medicamentos).
+
+Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrente sanguíneo y afectar la función del sistema nervioso. Esto puede traer como consecuencia una HE.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HUb-I7-wgE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAM-f6-iId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6180" y="-560"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l3G-eq-duj">
+            <objects>
+                <viewController id="y3v-Bp-Tsb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svL-km-ciZ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ansiedad-1" id="MJ9-0B-wMY">
+                                <rect key="frame" x="163" y="241" width="724" height="558"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ERL-4N-8hj">
+                                <rect key="frame" x="138" y="823" width="749" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Trastornos de pánico: la diferencia con la ansiedad generalizada, es que los síntomas del pánico son más agudos, y puede causar problemas psicológicos o físicos. Trastorno obsesivo-compulsivo: son pensamientos o ideas ansiosas, que pueden influenciar nuestro comportamiento.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.87450980389999999" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Enm-an-3i1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GD7-w6-XMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6352" y="-2232"/>
+        </scene>
+        <!--Many-->
+        <scene sceneID="oHC-zD-8wo">
+            <objects>
+                <viewController id="z4g-6Z-mug" customClass="CPMMany" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="medicinaPagina1" id="FHu-vL-ZZz">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Us2-EO-8jO">
+                                <rect key="frame" x="96" y="112" width="204" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="CPMmesoterapia_virtual"/>
+                                <connections>
+                                    <action selector="sendVirtual:" destination="z4g-6Z-mug" eventType="touchDown" id="lhH-48-3Nv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DHH-FX-W3d">
+                                <rect key="frame" x="162" y="257" width="204" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="CPM_aparatologia_estetica"/>
+                                <connections>
+                                    <action selector="sendAparatologia:" destination="z4g-6Z-mug" eventType="touchDown" id="UXc-Cp-dss"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OQZ-VT-yDp">
+                                <rect key="frame" x="374" y="180" width="204" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="CPMmesoterapia_nutricional"/>
+                                <connections>
+                                    <action selector="sendMesoterapia:" destination="z4g-6Z-mug" eventType="touchDown" id="iT9-gi-bZP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEW-control-de-peso" id="gUj-ug-hO0">
+                                <rect key="frame" x="-164" y="-104" width="1099" height="1282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZzV-U4-dc4" userLabel="Button-colocacion globo gastrico">
+                                <rect key="frame" x="45" y="564" width="681" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sendCPMGlobo:" destination="z4g-6Z-mug" eventType="touchDown" id="7qA-Wp-PBx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6on-Lg-rxF" userLabel="Button-asesoria nutricional">
+                                <rect key="frame" x="45" y="684" width="681" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sendNutricional:" destination="z4g-6Z-mug" eventType="touchDown" id="2Fl-TD-Rri"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Ez-Nt-hxx" userLabel="Button-supervicion medica">
+                                <rect key="frame" x="45" y="805" width="703" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sendSupervicion:" destination="z4g-6Z-mug" eventType="touchDown" id="d0S-4r-yu9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GfL-pe-Rbc" userLabel="Button-apratologia estetica">
+                                <rect key="frame" x="39" y="922" width="687" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sendLipoescultura:" destination="z4g-6Z-mug" eventType="touchDown" id="fU4-3I-ARF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cSa-Cp-9AW">
+                                <rect key="frame" x="587" y="87" width="139" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3u3-3D-zWT" kind="push" id="RfF-du-3Wl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iR1-g1-ZMd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9d-oa-E7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3841" y="1236"/>
+        </scene>
+        <!--Aestetic Treatments Controller-->
+        <scene sceneID="lVm-zl-JHx">
+            <objects>
+                <viewController id="dR4-2p-HHP" customClass="AesteticTreatmentsController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="medicinaPagina2" id="MpC-7Y-GCf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YJO-Rg-Ppx">
+                                <rect key="frame" x="91" y="257" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="celulitis"/>
+                                <connections>
+                                    <action selector="sendCelulitis:" destination="dR4-2p-HHP" eventType="touchDown" id="SVv-aI-0gp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jhY-PC-iLL">
+                                <rect key="frame" x="91" y="465" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="embellecimiento"/>
+                                <connections>
+                                    <action selector="sendLevantamientoBusto:" destination="dR4-2p-HHP" eventType="touchDown" id="HCy-gr-J5p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a0b-0v-a06">
+                                <rect key="frame" x="91" y="660" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="rejuvecimiento de manos"/>
+                                <connections>
+                                    <action selector="rejuvenecimiento_manos:" destination="dR4-2p-HHP" eventType="touchDown" id="aaX-Qj-Bpw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MmH-JM-z74">
+                                <rect key="frame" x="327" y="257" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="reafirmacion"/>
+                                <connections>
+                                    <action selector="sendReafiracionMuslos:" destination="dR4-2p-HHP" eventType="touchDown" id="qnT-Zd-u1t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DXj-J9-677">
+                                <rect key="frame" x="327" y="465" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facial"/>
+                                <connections>
+                                    <action selector="levantamientoFacial:" destination="dR4-2p-HHP" eventType="touchDown" id="Bjt-EW-OOg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kD6-A2-kon">
+                                <rect key="frame" x="327" y="660" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="rejuvecimiento facial"/>
+                                <connections>
+                                    <action selector="sendRejuvenecimientoFacial:" destination="dR4-2p-HHP" eventType="touchDown" id="OLO-RA-JZK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u4g-xj-8sl">
+                                <rect key="frame" x="562" y="263" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="brazos"/>
+                                <connections>
+                                    <action selector="sendReafirmacionBrazos:" destination="dR4-2p-HHP" eventType="touchDown" id="cOJ-Z9-Qug"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qa-yM-T1p">
+                                <rect key="frame" x="562" y="471" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="remocion"/>
+                                <connections>
+                                    <action selector="sendRemocionOjeras:" destination="dR4-2p-HHP" eventType="touchDown" id="wtP-16-TA9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bE5-wB-zYh">
+                                <rect key="frame" x="562" y="666" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="blanqueamiento de axilas"/>
+                                <connections>
+                                    <action selector="sendBlanqueamientoAxilas:" destination="dR4-2p-HHP" eventType="touchDown" id="DqH-uk-qfo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VXV-rW-N6D">
+                                <rect key="frame" x="777" y="263" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="levantamiento"/>
+                                <connections>
+                                    <action selector="sendEmbellecimientoGluteos:" destination="dR4-2p-HHP" eventType="touchDown" id="clL-ce-A5W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dDg-YU-e4n">
+                                <rect key="frame" x="777" y="666" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="remocion de manchas"/>
+                                <connections>
+                                    <action selector="sendRemocionManchas:" destination="dR4-2p-HHP" eventType="touchDown" id="Vi6-Pm-Jbo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OV5-dh-5of">
+                                <rect key="frame" x="91" y="884" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="remocion de hongos"/>
+                                <connections>
+                                    <action selector="sendRemocionHongos:" destination="dR4-2p-HHP" eventType="touchDown" id="LbJ-I8-whc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4tc-GM-blq">
+                                <rect key="frame" x="327" y="884" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="atenuacon de tatuakes"/>
+                                <connections>
+                                    <action selector="sendAtenuacionTatuajes:" destination="dR4-2p-HHP" eventType="touchDown" id="Gu1-xn-7og"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gwx-X2-4vW">
+                                <rect key="frame" x="562" y="886" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="hiperhidrosis"/>
+                                <connections>
+                                    <action selector="sendTratamientoHiperhidrosis:" destination="dR4-2p-HHP" eventType="touchDown" id="mMX-d1-9Kh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogp-jz-gj1">
+                                <rect key="frame" x="777" y="884" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="hiperhidrosis"/>
+                                <connections>
+                                    <action selector="sendTratamientoHiperhidrosis:" destination="dR4-2p-HHP" eventType="touchDown" id="PHR-wC-aNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fyy-y8-prc">
+                                <rect key="frame" x="777" y="471" width="156" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="atenuacion de estrias"/>
+                                <connections>
+                                    <action selector="atenuacion_estrias:" destination="dR4-2p-HHP" eventType="touchDown" id="wjg-Js-jlv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Clients" id="BmR-PT-1Mg">
+                                <rect key="frame" x="446" y="99" width="133" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c2Y-HU-tCF">
+                                <rect key="frame" x="91" y="1054" width="842" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">En The Clinic Pain, somos especialistas en dar a nuestros pacientes una experiencia de serenidad, seguridad y confianza, consiguiendo resultados visibles.
+No hay duda de que hacer un procedimiento de cualquier tipo en The Clinic Pain mejorará tu físico, pero no solo la belleza, si no la confianza y seguridad en ti mismo.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rRe-ha-qqo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvc-6J-Swg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5153" y="1236"/>
+        </scene>
+        <!--Tratamiento-->
+        <scene sceneID="uLh-Zy-OHN">
+            <objects>
+                <viewController storyboardIdentifier="OneTreatmentcontroller" title="Tratamiento" id="pji-Tz-S4c" customClass="OneTreatmentcontroller" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kfe-7J-HLP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Dc0-81-vRX">
+                                <rect key="frame" x="133" y="169" width="759" height="577"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="contentLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="5OC-lr-QEX">
+                                <rect key="frame" x="133" y="775" width="779" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UvO-lG-mtD"/>
+                    <connections>
+                        <outlet property="contentImage" destination="Dc0-81-vRX" id="jmS-f3-ANm"/>
+                        <outlet property="contentLabel" destination="5OC-lr-QEX" id="PgP-aQ-uCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-6H-ZpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5153" y="2782"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Swa-pB-mv6">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="q5F-Ih-HPN" customClass="PageViewController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7Vp-fF-sxm" colorLabel="IBBuiltInLabel-Green"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxz-cP-eYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="813"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UMn-Nf-rUI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LtG-1u-vbv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G6j-ev-poZ">
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3u3-3D-zWT" kind="relationship" relationship="rootViewController" id="3bU-Je-oVf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQX-k8-4EO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem id="Npv-Do-B66"/>
+            </objects>
+            <point key="canvasLocation" x="-2385.9200000000001" y="159.36666666666667"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CPM_aparatologia_estetica" width="788" height="880"/>
+        <image name="CPMmesoterapia_nutricional" width="784" height="882"/>
+        <image name="CPMmesoterapia_virtual" width="820" height="912"/>
+        <image name="Clients" width="440" height="370"/>
+        <image name="NEW-control-de-peso" width="2184" height="2708"/>
+        <image name="NEW-portada" width="2184" height="2708"/>
+        <image name="Tratamientos" width="458" height="448"/>
+        <image name="ansiedad-1" width="1720" height="1140"/>
+        <image name="atenuacion de estrias" width="792" height="862"/>
+        <image name="atenuacon de tatuakes" width="786" height="882"/>
+        <image name="blanqueamiento de axilas" width="794" height="988"/>
+        <image name="brazos" width="798" height="872"/>
+        <image name="celulitis" width="796" height="874"/>
+        <image name="embellecimiento" width="792" height="888"/>
+        <image name="encefelapoatia_grande" width="1974" height="1120"/>
+        <image name="epilepsyBig" width="1780" height="1572"/>
+        <image name="esclerosis_multiple_big" width="1976" height="1130"/>
+        <image name="facial" width="796" height="876"/>
+        <image name="hiperhidrosis" width="786" height="972"/>
+        <image name="levantamiento" width="802" height="962"/>
+        <image name="reafirmacion" width="802" height="874"/>
+        <image name="rejuvecimiento de manos" width="790" height="972"/>
+        <image name="rejuvecimiento facial" width="788" height="870"/>
+        <image name="remocion" width="788" height="878"/>
+        <image name="remocion de hongos" width="792" height="884"/>
+        <image name="remocion de manchas" width="786" height="868"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RfF-du-3Wl"/>
+    </inferredMetricsTieBreakers>
 </document>
