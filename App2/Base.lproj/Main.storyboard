@@ -304,7 +304,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEW-control-de-peso" id="NPC-iC-oxK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEW-control-del-dolor" id="NPC-iC-oxK">
                                 <rect key="frame" x="-167" y="-104" width="1106" height="1292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -770,10 +770,6 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <action selector="atenuacion_estrias:" destination="dR4-2p-HHP" eventType="touchDown" id="wjg-Js-jlv"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Clients" id="BmR-PT-1Mg">
-                                <rect key="frame" x="446" y="99" width="133" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c2Y-HU-tCF">
                                 <rect key="frame" x="91" y="1054" width="842" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -783,6 +779,10 @@ No hay duda de que hacer un procedimiento de cualquier tipo en The Clinic Pain m
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEW-medicina-estetica" id="fOu-5c-Uoi">
+                                <rect key="frame" x="-279" y="-112" width="1231" height="1315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -860,6 +860,8 @@ No hay duda de que hacer un procedimiento de cualquier tipo en The Clinic Pain m
         <image name="CPMmesoterapia_virtual" width="820" height="912"/>
         <image name="Clients" width="440" height="370"/>
         <image name="NEW-control-de-peso" width="2184" height="2708"/>
+        <image name="NEW-control-del-dolor" width="2184" height="2708"/>
+        <image name="NEW-medicina-estetica" width="2184" height="2708"/>
         <image name="NEW-portada" width="2184" height="2708"/>
         <image name="Tratamientos" width="458" height="448"/>
         <image name="ansiedad-1" width="1720" height="1140"/>
@@ -883,6 +885,6 @@ No hay duda de que hacer un procedimiento de cualquier tipo en The Clinic Pain m
         <image name="remocion de manchas" width="786" height="868"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RfF-du-3Wl"/>
+        <segue reference="Bbh-VQ-TXb"/>
     </inferredMetricsTieBreakers>
 </document>
