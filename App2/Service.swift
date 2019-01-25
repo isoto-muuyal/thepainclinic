@@ -10,15 +10,26 @@ import Foundation
 
 class Service {
     
-    var id: Int
+    var id: Int?
+    var code: String?
     var prodName: String?
     var title1: String?
     var title2: String?
     var content1: String?
     var content2: String?
     
-    init( id: Int,  prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?) {
+    init( id: Int, code: String?, prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?) {
         self.id = id
+        self.code = code
+        self.prodName = prodName
+        self.title1 = title1
+        self.title2 = title2
+        self.content1 = content1
+        self.content2 = content2
+    }
+    
+    init( code: String?, prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?) {
+        self.code = code
         self.prodName = prodName
         self.title1 = title1
         self.title2 = title2

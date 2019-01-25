@@ -12,8 +12,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var contentLabel:UILabel?
     var password:String = "1234";
-    
     let serviceDao: ServicesDAO = ServicesDAO()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
         contentLabel?.text = "MANYCONTENT"
         
         // DB init
-       serviceDao.dbInit()
+        serviceDao.initDb()
         
     }
     
