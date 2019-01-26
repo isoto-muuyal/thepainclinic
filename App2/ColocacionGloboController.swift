@@ -9,6 +9,9 @@
 import UIKit
 class ColocacionGloboController: UIViewController {
 
+    // DB Access
+    let servicesDao = ServicesDAO();
+    
     // Titles
     @IBOutlet weak var prodName: UITextView!
     @IBOutlet weak var title1: UITextView!
@@ -31,19 +34,23 @@ class ColocacionGloboController: UIViewController {
     var pwd:String = ""
     
     @IBOutlet weak var nameLabel: UILabel!
+    var globoService: Service?
+    var code: String?
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         pwd = mainView.password
-        
+        globoService = servicesDao.getServiceByCode(code2: "cdpcolocacion")
         print("ColocacionGloboController loaded")
         print("Setting fields")
-        super.viewDidLoad()
         password.isHidden = true
-        content1.text = "Text is blablabla"
-        content2.text = "Text is blablabla content 2"
-        prodName.text = "Product"
-        title1.text = "Title 1"
-        title2.text = "title 2"
+        prodName.text = globoService?.prodName
+        title1.text = globoService?.title1
+        title2.text = globoService?.title2
+        content1.text = globoService?.content1!
+        content2.text = globoService?.content2
+        code = globoService?.code!
 
         print("Disable text fields ")
         content1.isEditable = false
@@ -71,7 +78,15 @@ class ColocacionGloboController: UIViewController {
             prodName.isEditable = false
             title1.isEditable = false
             title2.isEditable = false
-            editText.titleLabel?.text = "Edit"
+            editText.titleLabel?.text = "."
+            servicesDao.update(code: code!, service: Service(
+                code: code!,
+                prodName: prodName.text!,
+                title1: title1.text!,
+                title2: title2.text!,
+                content1: content1.text!,
+                content2: content2.text!
+            ))
         }
     }
     
@@ -85,7 +100,6 @@ class ColocacionGloboController: UIViewController {
             prodName.isEditable = true
             title1.isEditable = true
             title2.isEditable = true
-            title2.text = "title 2sdfsdf"
 
         } else {
             print("Password is not valid")
