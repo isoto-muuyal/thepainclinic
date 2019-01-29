@@ -47,6 +47,7 @@ class ServicesDAO {
         let _myService10 = Service( code: String("cdpasesoria"), prodName: String("ASESORÍA NUTRICIONAL"), title1: String("DISEÑO DE ALIMENTACIÓN DIARIA"), title2: String(""), content1: String("Lleve una alimentación saludable"), content2: String("") )
         let _myService11 = Service( code: String("cdpsupervision"), prodName: String("SUPERVISIÓN MEDICA"), title1: String("ESPECIALISTAS"), title2: String(""), content1: String("Supervición para mejor control de situaciones medicas"), content2: String("") )
         let _myService12 = Service( code: String("cdpaparatologia"), prodName: String("APARATOLOÍA ESTETICA"), title1: String("TECNOLOGÍA"), title2: String(""), content1: String("El mejor equipo estetico"), content2: String("") )
+        let _myServiceCDPIntro = Service( code: String("cdpintro"), prodName: String(" "), title1: String(" "), title2: String(""), content1: String("Descripcion del control del dolor"), content2: String("") )
         
         myServices.append(_myService1)
         myServices.append(_myService2)
@@ -199,18 +200,19 @@ class ServicesDAO {
         prepareDb()
         var myRes: Service?
         var queryStatement: OpaquePointer?
-        let query = "SELECT * FROM services where id == 1"
-        print("Getting service by code")
+        let query = "SELECT * FROM services where code = ?"
+        print("Getting service by code using code:")
+        print(code2)
 
         if sqlite3_prepare_v2(db, query, -1, &queryStatement, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("Error preparing query in getting by code: \(errmsg)")
         }
         
-//        if sqlite3_bind_text(queryStatement, 1, code2, -1, nil) != SQLITE_OK {
-//            let errmsg = String(cString: sqlite3_errmsg(db)!)
-//            print("Error binding values in getting by code: \(errmsg)")
-//        }
+        if sqlite3_bind_text(queryStatement, 1, code2, -1, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("Error binding values in getting by code: \(errmsg)")
+        }
         print("Getting service by code")
 
         while (sqlite3_step(queryStatement)==SQLITE_ROW){

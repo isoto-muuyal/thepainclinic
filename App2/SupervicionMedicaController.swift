@@ -1,23 +1,23 @@
 //
-//  ColocacionGloboController.swift
+//  SupervicionMedicaController.swift
 //  App2
 //
-//  Created by Israel Soto Salcido on 1/17/19.
+//  Created by Israel Soto Salcido on 1/26/19.
 //  Copyright © 2019 Israel Soto Salcido. All rights reserved.
 //
 
 import UIKit
-class ColocacionGloboController: UIViewController {
 
+class SupervicionMedicaController: UIViewController {
+    
     // DB Access
     let servicesDao = ServicesDAO();
     // Get Passowrd
     let mainView = MainViewController()
-    var pwd:String = ""
-    var globoService: Service?
+    var pwd:String = "1234"
+    var asesoriaService: Service?
     var code: String?
     
-    // Titles
     @IBOutlet weak var prodName: UITextView!
     @IBOutlet weak var title1: UITextView!
     @IBOutlet weak var title2: UITextView!
@@ -28,19 +28,19 @@ class ColocacionGloboController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         pwd = mainView.password
-        globoService = servicesDao.getServiceByCode(code2: "cdpcolocacion")
+        asesoriaService = servicesDao.getServiceByCode(code2: "cdpsupervision")
         print("ColocacionGloboController loaded")
         print("Setting fields")
         password.isHidden = true
-        prodName.text = globoService?.prodName
-        title1.text = globoService?.title1
-        title2.text = globoService?.title2
-        content1.text = globoService?.content1!
-        content2.text = globoService?.content2
-        code = globoService?.code!
-
+        prodName.text = asesoriaService?.prodName
+        title1.text = asesoriaService?.title1
+        title2.text = asesoriaService?.title2
+        content1.text = asesoriaService?.content1!
+        content2.text = asesoriaService?.content2
+        code = asesoriaService?.code!
+        
         print("Disable text fields ")
         content1.isEditable = false
         content2.isEditable = false
@@ -60,7 +60,7 @@ class ColocacionGloboController: UIViewController {
         if (content1.isEditable != true){
             password.isHidden = false
             editText.titleLabel?.text = "Save"
-
+            
         } else {
             content1.isEditable = false
             content2.isEditable = false
@@ -89,9 +89,10 @@ class ColocacionGloboController: UIViewController {
             prodName.isEditable = true
             title1.isEditable = true
             title2.isEditable = true
-
+            
         } else {
             print("Password is not valid")
         }
     }
+    
 }
