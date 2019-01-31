@@ -15,8 +15,9 @@ class AparatologiaController: UIViewController {
     // Get Passowrd
     let mainView = MainViewController()
     var pwd:String = "1234"
-    var asesoriaService: Service?
+    var myService: Service?
     var code: String?
+    var image: String?
     
     @IBOutlet weak var prodName: UITextView!
     @IBOutlet weak var title1: UITextView!
@@ -30,16 +31,16 @@ class AparatologiaController: UIViewController {
         super.viewDidLoad()
         
         pwd = mainView.password
-        asesoriaService = servicesDao.getServiceByCode(code2: "cdpaparatologia")
+        myService = servicesDao.getServiceByCode(code2: "cdpaparatologia")
         print("ColocacionGloboController loaded")
         print("Setting fields")
         password.isHidden = true
-        prodName.text = asesoriaService?.prodName
-        title1.text = asesoriaService?.title1
-        title2.text = asesoriaService?.title2
-        content1.text = asesoriaService?.content1!
-        content2.text = asesoriaService?.content2
-        code = asesoriaService?.code!
+        prodName.text = myService?.prodName
+        title1.text = myService?.title1
+        title2.text = myService?.title2
+        content1.text = myService?.content1
+        content2.text = myService?.content2
+        code = myService?.code!
         
         print("Disable text fields ")
         content1.isEditable = false
@@ -74,7 +75,8 @@ class AparatologiaController: UIViewController {
                 title1: title1.text!,
                 title2: title2.text!,
                 content1: content1.text!,
-                content2: content2.text!
+                content2: content2.text!,
+                image: image
             ))
         }
     }

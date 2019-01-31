@@ -17,6 +17,7 @@ class AsesoriaNutricionalController: UIViewController {
     var pwd:String = "1234"
     var asesoriaService: Service?
     var code: String?
+    var image: String?
     
     @IBOutlet weak var prodName: UITextView!
     @IBOutlet weak var title1: UITextView!
@@ -74,7 +75,8 @@ class AsesoriaNutricionalController: UIViewController {
                 title1: title1.text!,
                 title2: title2.text!,
                 content1: content1.text!,
-                content2: content2.text!
+                content2: content2.text!,
+                image: image
             ))
         }
     }
@@ -94,5 +96,4 @@ class AsesoriaNutricionalController: UIViewController {
             print("Password is not valid")
         }
     }
-    
 }

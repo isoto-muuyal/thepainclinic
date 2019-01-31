@@ -1,15 +1,14 @@
 //
-//  SupervicionMedicaController.swift
+//  CDPOrangeController.swift
 //  App2
 //
-//  Created by Israel Soto Salcido on 1/26/19.
+//  Created by Israel Soto Salcido on 1/29/19.
 //  Copyright © 2019 Israel Soto Salcido. All rights reserved.
 //
 
 import UIKit
 
-class SupervicionMedicaController: UIViewController {
-    
+class CDPOrangeController:UIViewController {
     // DB Access
     let servicesDao = ServicesDAO();
     // Get Passowrd
@@ -24,15 +23,15 @@ class SupervicionMedicaController: UIViewController {
     @IBOutlet weak var title2: UITextView!
     @IBOutlet weak var content1: UITextView!
     @IBOutlet weak var content2: UITextView!
-    @IBOutlet weak var editText: UIButton!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var editText: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pwd = mainView.password
-        asesoriaService = servicesDao.getServiceByCode(code2: "cdpsupervision")
-        print("ColocacionGloboController loaded")
+        asesoriaService = servicesDao.getServiceByCode(code2: "cdporange")
+        print("CDP ORANGE loaded")
         print("Setting fields")
         password.isHidden = true
         prodName.text = asesoriaService?.prodName

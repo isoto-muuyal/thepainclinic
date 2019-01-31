@@ -17,8 +17,9 @@ class Service {
     var title2: String?
     var content1: String?
     var content2: String?
+    var image: String?
     
-    init( id: Int, code: String?, prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?) {
+    init( id: Int, code: String?, prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?, image: String?) {
         self.id = id
         self.code = code
         self.prodName = prodName
@@ -26,15 +27,17 @@ class Service {
         self.title2 = title2
         self.content1 = content1
         self.content2 = content2
+        self.image = image
     }
     
-    init( code: String?, prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?) {
+    init( code: String?, prodName: String?,  title1: String?,  title2: String?,  content1: String?, content2: String?, image: String?) {
         self.code = code
         self.prodName = prodName
         self.title1 = title1
         self.title2 = title2
         self.content1 = content1
         self.content2 = content2
+        self.image = image
     }
     
 }

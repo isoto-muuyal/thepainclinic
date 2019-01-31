@@ -13,7 +13,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var contentLabel:UILabel?
     var password:String = "1234";
     let serviceDao: ServicesDAO = ServicesDAO()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,7 @@ class MainViewController: UIViewController {
         
         // DB init
         serviceDao.initDb()
-        
+        initFolders()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +37,8 @@ class MainViewController: UIViewController {
         print("Memory warning!!")
     }
     
-    
+    func initFolders(){
+            print("initFolders TODO")
+    }
     
 }
