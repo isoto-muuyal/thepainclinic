@@ -37,10 +37,10 @@ class ServicesDAO {
         }
         
         var myServices = [Service]()
-        let _myService1 = Service( code: String("cdporange"), prodName: String("ORANGE CREAM"), title1: String("GOTERO SUBLINGUAL"), title2: String("Compuestos"), content1: String("Útil en padecimientos como epilepsía, enfermedad de Parkinson, artitris reumatoide, cefalea, migraña vascular. Mejora la conducción nerviosa, fortalece las vainas de mielina, disminute el dolor de una manera progresiva"), content2: String("Compuesto 100% de CBD \nSaborizante natural de crema de naranja \nConcentraciones de 500mg en 30ml. \n Se recomienda el uso de 1 a 2 goteros cada 8 horas. \nSin conservadores"), image: String("item") )
-        let _myService2 = Service( code: String("cdpmint"), prodName: String("MINT CHOCOLATE"), title1: String("GOTERO SUBLINGUAL"), title2: String("Compuestos"), content1: String("Útil en padecimientos como epilepsia, enfermedad de Parkinson, artitris reumatoide, cefalea, migraña vascular. Mejora la conducción nerviosa, fortalece las vainas de milelina, disminuye el dolo de una manera progresiva."), content2: String("Compuesto 100% de CBD \nSaborizante natural de menta chocolate \nConcentraciones de 500mg en 30ml. \nSe recomienda el uso  de 1 a 2 goteros cada 8 horas. \nSin conservadores"), image: String("item") )
-        let _myService3 = Service( code: String("cdpmassage"), prodName: String("MASSAGE OIL"), title1: String("ACEITE"), title2: String("df  "), content1: String("Útil en el tratamiento de Parkinson, artitris reumatoide y cefalea"), content2: String(" sdf "), image: String("item") )
-        let _myService4 = Service( code: String("cdphemp"), prodName: String("HEMP INFUSED PAIN RE-LEAF"), title1: String("TÉ"), title2: String("  "), content1: String("Útil en el tratamiento de Parkinson, artitris reumatoide y cefalea"), content2: String(" sdf "), image: String("item") )
+        let _myService1 = Service( code: String("cddorange"), prodName: String("ORANGE CREAM"), title1: String("GOTERO SUBLINGUAL"), title2: String("Compuestos"), content1: String("Útil en padecimientos como epilepsía, enfermedad de Parkinson, artitris reumatoide, cefalea, migraña vascular. Mejora la conducción nerviosa, fortalece las vainas de mielina, disminute el dolor de una manera progresiva"), content2: String("Compuesto 100% de CBD \nSaborizante natural de crema de naranja \nConcentraciones de 500mg en 30ml. \n Se recomienda el uso de 1 a 2 goteros cada 8 horas. \nSin conservadores"), image: String("item") )
+        let _myService2 = Service( code: String("cddmint"), prodName: String("MINT CHOCOLATE"), title1: String("GOTERO SUBLINGUAL"), title2: String("Compuestos"), content1: String("Útil en padecimientos como epilepsia, enfermedad de Parkinson, artitris reumatoide, cefalea, migraña vascular. Mejora la conducción nerviosa, fortalece las vainas de milelina, disminuye el dolo de una manera progresiva."), content2: String("Compuesto 100% de CBD \nSaborizante natural de menta chocolate \nConcentraciones de 500mg en 30ml. \nSe recomienda el uso  de 1 a 2 goteros cada 8 horas. \nSin conservadores"), image: String("item") )
+        let _myService3 = Service( code: String("cddmassage"), prodName: String("MASSAGE OIL"), title1: String("ACEITE"), title2: String("df  "), content1: String("Útil en el tratamiento de Parkinson, artitris reumatoide y cefalea"), content2: String(" sdf "), image: String("item") )
+        let _myService4 = Service( code: String("cddhemp"), prodName: String("HEMP INFUSED PAIN RE-LEAF"), title1: String("TÉ"), title2: String("  "), content1: String("Útil en el tratamiento de Parkinson, artitris reumatoide y cefalea"), content2: String(" sdf "), image: String("item") )
         let _myService5 = Service( code: String("mecelulitis"), prodName: String("CELULITIS"), title1: String("SERVICIO"), title2: String("sdfs  "), content1: String("Contamos con servicio de carboxiterapia, mesoterapia, cavitación, radio frecuencia y HIFU de la más alta calidad"), content2: String("sdf  "), image: String("treatment"))
         let _myService6 = Service( code: String("mereafirmacionm"), prodName: String("REAFIRMACIÓN DE MUSLOS"), title1: String("SERVICIO"), title2: String(" df "), content1: String("Usamos Electroestimulación y ultrasónido de alta álta frecuencia para mejores resultados"), content2: String("dfs  "), image: String("treatment") )
         let _myService7 = Service( code: String("mereafirmacionb"), prodName: String("REAFIRMACIÓN DE BRAZOS"), title1: String("SERVICIO"), title2: String(" sdfs "), content1: String("Ofrecemos el mejor servicio de carboxiterapia, electroestimulación, HIFU y mesoterapia para los mejores resultados"), content2: String(" sdf "), image: String("treatment") )
@@ -256,9 +256,12 @@ class ServicesDAO {
         }
         print("Returning service with code: " + myRes!.code!)
         print("Returning service with name: " + myRes!.prodName!)
-        print("Returning service with content: " + myRes!.content1!)
-        print("Returning service with title: " + myRes!.title1!)
-        print("Returning service with title: " + myRes!.image!)
+        print("Returning service with content1: " + myRes!.content1!)
+        print("Returning service with content2: " + myRes!.content2!)
+        print("Returning service with title1: " + myRes!.title1!)
+        print("Returning service with title2: " + myRes!.title2!)
+        print("Returning service with image: " + myRes!.image!)
+
         return myRes!
     }
     

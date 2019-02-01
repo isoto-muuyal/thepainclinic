@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:App2.xcodeproj">
+      location = "self:/Users/isoto/workspace/thepainclinic/test/App2/The Clinic Pain.xcodeproj">
    </FileRef>
 </Workspace>

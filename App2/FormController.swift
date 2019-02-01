@@ -16,24 +16,14 @@ class FormController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var contactMethodPicker: UIPickerView!
     var contactMethodsData: [String] = [String]()
     
+    
+    
+    
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
         print("Form controller loaded")
-//        let    picker2 = UIPickerView()
-//        view.addSubview(picker2)
-//        picker2.translatesAutoresizingMaskIntoConstraints = false
-//
-//        picker2.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-//        picker2.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-//        picker2.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-//
-//        self.numberOfComponents(in: picker2)
-//        self.pickerView(picker2, numberOfRowsInComponent: 3)
-//        self.pickerView(picker2, titleForRow: 1, forComponent: 1)
-//
-//        self.treatmentPicker.delegate = self
-//        self.treatmentPicker.dataSource = self
         self.contactMethodPicker.delegate = self
         self.contactMethodPicker.dataSource = self
         

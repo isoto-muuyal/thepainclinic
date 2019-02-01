@@ -106,6 +106,13 @@
                                     <segue destination="q5F-Ih-HPN" kind="push" id="tcC-Ru-jyA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ChA-T3-4yP">
+                                <rect key="frame" x="586" y="91" width="123" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rOc-kr-bho" kind="push" id="oWb-fA-Zn9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.92156862745098034" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -489,7 +496,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" id="yAj-Px-wki">
-                                <rect key="frame" x="102" y="427" width="576" height="57"/>
+                                <rect key="frame" x="102" y="426" width="576" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre">
@@ -503,7 +510,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="3We-IB-QDw">
-                                <rect key="frame" x="102" y="540" width="576" height="54"/>
+                                <rect key="frame" x="91" y="540" width="587" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -530,8 +537,9 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SpR-A5-hnC">
-                                <rect key="frame" x="686" y="540" width="30" height="30"/>
+                                <rect key="frame" x="591" y="531" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="."/>
                                 <connections>
                                     <action selector="editText:" destination="2DX-j1-Mes" eventType="touchDown" id="9hu-3k-y63"/>
@@ -572,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynf-7q-HYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1266" y="670"/>
+            <point key="canvasLocation" x="1265.625" y="669.7265625"/>
         </scene>
         <!--One-->
         <scene sceneID="TjD-En-cgb">
@@ -667,7 +675,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="4ud-Hn-zZ3">
-                                <rect key="frame" x="78" y="589" width="612" height="185"/>
+                                <rect key="frame" x="83" y="582" width="607" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
@@ -693,13 +701,32 @@
                                     <action selector="isPasswordValid:" destination="40d-eh-rjN" eventType="editingChanged" id="gZ6-Z8-QdL"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CFb-Fh-UHG">
+                                <rect key="frame" x="594" y="481" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="40d-eh-rjN" eventType="touchUpInside" id="NaG-Mr-o1A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f0v-Ay-OFh">
+                                <rect key="frame" x="601" y="444" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="40d-eh-rjN" eventType="touchUpInside" id="q93-pU-A6Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ObZ-wk-kAC"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="5FX-Px-do9" id="2HE-OU-AsT"/>
+                        <outlet property="changeImageButton" destination="CFb-Fh-UHG" id="8Xc-EJ-gVJ"/>
                         <outlet property="content1" destination="4ud-Hn-zZ3" id="MdX-j3-q4m"/>
                         <outlet property="content2" destination="3Ai-8y-72u" id="YsR-lm-v3Z"/>
+                        <outlet property="defaultImageButton" destination="f0v-Ay-OFh" id="ejU-8j-uFo"/>
                         <outlet property="editText" destination="Zet-TD-meI" id="QMx-Vf-4So"/>
                         <outlet property="password" destination="B2m-Af-6d4" id="31o-Zm-A3h"/>
                         <outlet property="prodName" destination="alz-KP-82Q" id="jYf-06-Lt3"/>
@@ -729,7 +756,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="HAK-c3-7DP">
-                                <rect key="frame" x="94" y="821" width="587" height="154"/>
+                                <rect key="frame" x="91" y="821" width="590" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
@@ -737,7 +764,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="qXN-RN-ah2">
-                                <rect key="frame" x="96" y="520" width="576" height="54"/>
+                                <rect key="frame" x="91" y="520" width="590" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -791,20 +818,39 @@
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="04k-GZ-atX">
-                                <rect key="frame" x="91" y="577" width="587" height="185"/>
+                                <rect key="frame" x="91" y="577" width="590" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="es5-Db-dRC">
+                                <rect key="frame" x="607" y="473" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="o3x-xx-XiI" eventType="touchUpInside" id="Cco-C1-tfI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KST-Xj-GPV">
+                                <rect key="frame" x="614" y="436" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="o3x-xx-XiI" eventType="touchUpInside" id="3Zk-b7-FiA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pne-zu-0dW"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="p34-px-Ujf" id="eFX-ru-Kpx"/>
+                        <outlet property="changeImageButton" destination="es5-Db-dRC" id="3uT-Pd-1Kz"/>
                         <outlet property="content1" destination="04k-GZ-atX" id="ydr-FN-w2N"/>
                         <outlet property="content2" destination="HAK-c3-7DP" id="13v-Kj-xzT"/>
+                        <outlet property="defaultImageButton" destination="KST-Xj-GPV" id="oSs-BS-85C"/>
                         <outlet property="editText" destination="335-BU-xil" id="cIb-Rm-vev"/>
                         <outlet property="password" destination="ZMo-t1-GAu" id="KhJ-2f-v7K"/>
                         <outlet property="prodName" destination="LiZ-af-l3v" id="zL4-VP-vfQ"/>
@@ -856,7 +902,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="Zer-A5-uCG">
-                                <rect key="frame" x="96" y="526" width="576" height="54"/>
+                                <rect key="frame" x="91" y="526" width="581" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -910,20 +956,39 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="jqx-y8-Xyy">
-                                <rect key="frame" x="91" y="583" width="587" height="185"/>
+                                <rect key="frame" x="91" y="583" width="587" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dWG-jE-ONE">
+                                <rect key="frame" x="607" y="475" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="KO9-dw-WD0" eventType="touchUpInside" id="cQz-qi-QcH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bE8-Uq-uWB">
+                                <rect key="frame" x="614" y="438" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="KO9-dw-WD0" eventType="touchUpInside" id="Twf-7M-xPL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="HUb-I7-wgE"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="y41-EG-fIC" id="5Y3-9D-wsH"/>
+                        <outlet property="changeImageButton" destination="dWG-jE-ONE" id="FNR-wu-kSL"/>
                         <outlet property="content1" destination="jqx-y8-Xyy" id="0md-79-ybt"/>
                         <outlet property="content2" destination="LWs-Fd-MXY" id="AMu-n1-Ana"/>
+                        <outlet property="defaultImageButton" destination="bE8-Uq-uWB" id="thP-4T-ZVG"/>
                         <outlet property="editText" destination="7Vb-1B-wIO" id="VwN-9E-4xT"/>
                         <outlet property="password" destination="ddX-50-2UM" id="dv0-CV-eg1"/>
                         <outlet property="prodName" destination="0In-VC-2OW" id="liy-5e-kjT"/>
@@ -933,7 +998,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAM-f6-iId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4163" y="-1247"/>
+            <point key="canvasLocation" x="4162.5" y="-1247.4609375"/>
         </scene>
         <!--Mint Controller-->
         <scene sceneID="l3G-eq-duj">
@@ -977,7 +1042,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="HCv-2S-AAc">
-                                <rect key="frame" x="96" y="527" width="576" height="54"/>
+                                <rect key="frame" x="96" y="527" width="585" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -992,14 +1057,6 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5QD-Qo-nKn">
-                                <rect key="frame" x="689" y="518" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="editText:" destination="y3v-Bp-Tsb" eventType="touchDown" id="uHh-3O-5uf"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="HBn-QJ-gZt">
                                 <rect key="frame" x="96" y="449" width="576" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1031,21 +1088,52 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="Qs7-ou-yNG">
-                                <rect key="frame" x="91" y="584" width="587" height="185"/>
+                                <rect key="frame" x="94" y="584" width="587" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5QD-Qo-nKn">
+                                <rect key="frame" x="689" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="editText:" destination="y3v-Bp-Tsb" eventType="touchDown" id="uHh-3O-5uf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MDz-gK-HyO">
+                                <rect key="frame" x="607" y="476" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen">
+                                    <color key="titleColor" red="0.29240100819999998" green="0.52272045590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="y3v-Bp-Tsb" eventType="touchUpInside" id="aoZ-GE-Rqq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zxu-JZ-0fw">
+                                <rect key="frame" x="614" y="439" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default">
+                                    <color key="titleColor" red="0.29240100819999998" green="0.52272045590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreImage:" destination="y3v-Bp-Tsb" eventType="touchUpInside" id="c4B-ZF-s9X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.87450980389999999" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Enm-an-3i1"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="VUE-fu-5bI" id="h3t-1j-JAy"/>
+                        <outlet property="changeImageButton" destination="MDz-gK-HyO" id="zoh-ig-RPv"/>
                         <outlet property="content1" destination="Qs7-ou-yNG" id="abU-rj-c4w"/>
                         <outlet property="content2" destination="RGT-zK-CsV" id="yxC-u2-WU8"/>
+                        <outlet property="defaultImageButton" destination="zxu-JZ-0fw" id="a9X-o4-UVB"/>
                         <outlet property="editText" destination="5QD-Qo-nKn" id="pwz-JJ-uYY"/>
                         <outlet property="password" destination="MIo-l3-z4h" id="TYT-US-ddr"/>
                         <outlet property="prodName" destination="a2Z-Yf-llm" id="wfs-jN-JoW"/>
@@ -1055,7 +1143,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GD7-w6-XMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4164" y="-1884"/>
+            <point key="canvasLocation" x="4163.28125" y="-1884.3749999999998"/>
         </scene>
         <!--Many-->
         <scene sceneID="oHC-zD-8wo">
@@ -1179,14 +1267,6 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <rect key="frame" x="0.0" y="41" width="768" height="983"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6jp-Wh-tN2">
-                                <rect key="frame" x="10" y="51" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="editText:" destination="2DX-j1-Mes" eventType="touchDown" id="VHp-Uc-Ngx"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="ogX-8W-U9x">
                                 <rect key="frame" x="91" y="592" width="587" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1218,7 +1298,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="Cye-gq-hst">
-                                <rect key="frame" x="102" y="540" width="576" height="54"/>
+                                <rect key="frame" x="91" y="540" width="587" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1244,8 +1324,16 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <action selector="isPasswordValid:" destination="XEC-6c-jcK" eventType="editingChanged" id="zx4-b8-UMk"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6jp-Wh-tN2">
+                                <rect key="frame" x="10" y="51" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="editText:" destination="2DX-j1-Mes" eventType="touchDown" id="VHp-Uc-Ngx"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BUF-zt-GoO">
-                                <rect key="frame" x="686" y="540" width="30" height="30"/>
+                                <rect key="frame" x="603" y="540" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="."/>
                                 <connections>
@@ -1259,13 +1347,32 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <segue destination="z4g-6Z-mug" kind="push" id="wVu-ma-59r"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZgN-ml-VzJ">
+                                <rect key="frame" x="591" y="502" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="XEC-6c-jcK" eventType="touchUpInside" id="cob-JD-FPp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kM6-ne-CZE">
+                                <rect key="frame" x="599" y="465" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="XEC-6c-jcK" eventType="touchUpInside" id="jEA-SQ-J6d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="2cA-n1-unh"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="oOg-g1-ZCR" id="CWb-aX-5Wd"/>
+                        <outlet property="changeImageButton" destination="ZgN-ml-VzJ" id="K2M-il-MGD"/>
                         <outlet property="content1" destination="ogX-8W-U9x" id="dcP-92-xKa"/>
                         <outlet property="content2" destination="kZ6-tB-zFE" id="L1I-qY-t12"/>
+                        <outlet property="defaultImageButton" destination="kM6-ne-CZE" id="t8T-Dt-afc"/>
                         <outlet property="editText" destination="BUF-zt-GoO" id="oUj-Sz-dMR"/>
                         <outlet property="password" destination="xDI-22-Vs0" id="DJy-Jx-mkA"/>
                         <outlet property="prodName" destination="hEz-Hj-cPy" id="wKl-s2-W7n"/>
@@ -1275,7 +1382,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pn9-SI-R3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888" y="670"/>
+            <point key="canvasLocation" x="1887.5" y="669.7265625"/>
         </scene>
         <!--Supervicion Medica Controller-->
         <scene sceneID="oNF-UY-fsi">
@@ -1290,7 +1397,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="TK2-HF-acz">
-                                <rect key="frame" x="94" y="584" width="587" height="215"/>
+                                <rect key="frame" x="91" y="593" width="590" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
@@ -1320,7 +1427,15 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo2" textAlignment="center" id="g0m-xg-cJQ">
-                                <rect key="frame" x="94" y="791" width="587" height="58"/>
+                                <rect key="frame" x="91" y="791" width="590" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo2" textAlignment="center" id="MMR-2O-XHu">
+                                <rect key="frame" x="91" y="536" width="587" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1339,7 +1454,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lY7-gi-iWN">
-                                <rect key="frame" x="689" y="531" width="30" height="30"/>
+                                <rect key="frame" x="592" y="581" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="."/>
                                 <connections>
@@ -1353,21 +1468,32 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <segue destination="z4g-6Z-mug" kind="push" id="gEL-Mc-blF"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo2" textAlignment="center" id="MMR-2O-XHu">
-                                <rect key="frame" x="91" y="536" width="587" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DG4-kU-1hM">
+                                <rect key="frame" x="600" y="487" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="F3L-pB-t1k" eventType="touchUpInside" id="AtP-Qc-cCD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EXz-Nu-lSf">
+                                <rect key="frame" x="608" y="450" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="F3L-pB-t1k" eventType="touchUpInside" id="Rq4-v9-Mcn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wct-HI-I4D"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="4L5-JG-gha" id="1ah-le-KKJ"/>
+                        <outlet property="changeImageButton" destination="DG4-kU-1hM" id="uwW-wa-BQh"/>
                         <outlet property="content1" destination="TK2-HF-acz" id="oaF-zg-O7f"/>
                         <outlet property="content2" destination="2sx-gL-Mic" id="Zwm-D7-sGw"/>
+                        <outlet property="defaultImageButton" destination="EXz-Nu-lSf" id="b2e-4A-lRO"/>
                         <outlet property="editText" destination="lY7-gi-iWN" id="Uho-ZP-S8z"/>
                         <outlet property="password" destination="RNi-Sx-veZ" id="3UA-4k-glp"/>
                         <outlet property="prodName" destination="Mlk-L3-APu" id="gg2-3H-y3a"/>
@@ -1377,7 +1503,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmE-gA-N1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1266" y="1332"/>
+            <point key="canvasLocation" x="1265.625" y="1331.8359375"/>
         </scene>
         <!--Aparatologia Controller-->
         <scene sceneID="npl-u3-vUM">
@@ -1392,7 +1518,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="35o-Kb-cR4">
-                                <rect key="frame" x="95" y="848" width="587" height="154"/>
+                                <rect key="frame" x="95" y="848" width="587" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
@@ -1414,7 +1540,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="nUB-9B-nZC">
-                                <rect key="frame" x="106" y="538" width="576" height="54"/>
+                                <rect key="frame" x="91" y="538" width="591" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1440,8 +1566,16 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <action selector="isPasswordValid:" destination="mDs-Qq-WFk" eventType="editingChanged" id="OcS-Da-xsr"/>
                                 </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="JGB-Ga-xgM">
+                                <rect key="frame" x="91" y="600" width="587" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yhd-iD-X4Q">
-                                <rect key="frame" x="690" y="538" width="30" height="30"/>
+                                <rect key="frame" x="639" y="562" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="."/>
                                 <connections>
@@ -1455,21 +1589,32 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <segue destination="z4g-6Z-mug" kind="push" id="LBg-2x-sAx"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="JGB-Ga-xgM">
-                                <rect key="frame" x="91" y="619" width="587" height="154"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Db3-fa-ra6">
+                                <rect key="frame" x="589" y="500" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="mDs-Qq-WFk" eventType="touchUpInside" id="cVd-8Z-pAr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FSg-xZ-ufU">
+                                <rect key="frame" x="597" y="463" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="mDs-Qq-WFk" eventType="touchUpInside" id="rMu-SZ-Frb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="od8-x8-81n"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="0El-Kh-Qkr" id="6Tl-dU-u7U"/>
+                        <outlet property="changeImageButton" destination="Db3-fa-ra6" id="Ajw-lB-xTm"/>
                         <outlet property="content1" destination="JGB-Ga-xgM" id="urX-fq-gvk"/>
                         <outlet property="content2" destination="35o-Kb-cR4" id="8KD-l8-AEy"/>
+                        <outlet property="defaultImageButton" destination="FSg-xZ-ufU" id="8nb-ia-kq7"/>
                         <outlet property="editText" destination="Yhd-iD-X4Q" id="1wS-wG-gJs"/>
                         <outlet property="password" destination="gAc-UR-T0U" id="M1o-Jj-dGD"/>
                         <outlet property="prodName" destination="5aI-Fg-X1D" id="2FJ-6s-heC"/>
@@ -1479,7 +1624,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOA-BP-ugp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1895" y="1333"/>
+            <point key="canvasLocation" x="1894.53125" y="1332.421875"/>
         </scene>
         <!--Celulitis Controller-->
         <scene sceneID="j4Z-90-Y1x">
@@ -1515,7 +1660,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="1Pd-gH-wqa">
-                                <rect key="frame" x="107" y="561" width="576" height="54"/>
+                                <rect key="frame" x="96" y="561" width="587" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1541,21 +1686,8 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <action selector="isPasswordValid:" destination="UcG-RO-m3U" eventType="editingChanged" id="kLt-Nl-FH0"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mF6-Y5-7Dy">
-                                <rect key="frame" x="691" y="561" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="editText:" destination="UcG-RO-m3U" eventType="touchDown" id="ovD-Xt-d9s"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7t5-J0-1uY">
-                                <rect key="frame" x="259" y="455" width="259" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36340884347068625" green="0.44930983670634927" blue="0.20571335208330538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" id="dhK-au-FqT">
-                                <rect key="frame" x="107" y="455" width="576" height="57"/>
+                                <rect key="frame" x="107" y="434" width="576" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre">
@@ -1568,13 +1700,40 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mF6-Y5-7Dy">
+                                <rect key="frame" x="691" y="561" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="editText:" destination="UcG-RO-m3U" eventType="touchDown" id="ovD-Xt-d9s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vl6-I5-SjA">
+                                <rect key="frame" x="604" y="487" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="UcG-RO-m3U" eventType="touchUpInside" id="P5f-LQ-0WC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WiG-wT-4tF">
+                                <rect key="frame" x="611" y="450" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="UcG-RO-m3U" eventType="touchUpInside" id="6zy-aH-jNO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="Peh-6L-oK4"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="oeR-zd-1da" id="72U-0d-ii8"/>
+                        <outlet property="changeImageButton" destination="Vl6-I5-SjA" id="93h-qE-BGb"/>
                         <outlet property="content1" destination="kFE-47-vM2" id="6Fm-bk-1I3"/>
                         <outlet property="content2" destination="CCE-M1-h5Z" id="C3d-eT-esS"/>
+                        <outlet property="defaultImageButton" destination="WiG-wT-4tF" id="Jpx-gi-SNn"/>
                         <outlet property="editText" destination="mF6-Y5-7Dy" id="4lw-02-nG2"/>
                         <outlet property="password" destination="NrZ-Jp-pce" id="u21-pI-5OO"/>
                         <outlet property="prodName" destination="dhK-au-FqT" id="gmy-pV-FmN"/>
@@ -1620,7 +1779,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="lxM-LP-bRh">
-                                <rect key="frame" x="105" y="561" width="576" height="54"/>
+                                <rect key="frame" x="94" y="561" width="587" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1646,21 +1805,8 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <action selector="isPasswordValid:" destination="PId-sL-OW6" eventType="editingChanged" id="nO2-0Y-APW"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zj4-0p-sza">
-                                <rect key="frame" x="689" y="561" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="editText:" destination="PId-sL-OW6" eventType="touchDown" id="biN-y8-8wL"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="EfB-L4-BYA">
-                                <rect key="frame" x="264" y="458" width="259" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36340884350000002" green="0.44930983670000002" blue="0.2057133521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" id="FjG-ST-euo">
-                                <rect key="frame" x="105" y="464" width="576" height="57"/>
+                                <rect key="frame" x="105" y="427" width="576" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre">
@@ -1673,13 +1819,40 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zj4-0p-sza">
+                                <rect key="frame" x="689" y="561" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="editText:" destination="PId-sL-OW6" eventType="touchDown" id="biN-y8-8wL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1sR-0D-tYl">
+                                <rect key="frame" x="607" y="501" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="PId-sL-OW6" eventType="touchUpInside" id="ZPd-ba-BAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lWX-IW-JuM">
+                                <rect key="frame" x="615" y="464" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="PId-sL-OW6" eventType="touchUpInside" id="ySb-Og-Sfi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="4ui-xy-EPa"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="EG9-14-KH8" id="Rc5-u1-LkD"/>
+                        <outlet property="changeImageButton" destination="1sR-0D-tYl" id="c5d-Uz-jsb"/>
                         <outlet property="content1" destination="Cyc-Xc-jcK" id="U39-Tg-ak0"/>
                         <outlet property="content2" destination="hOV-wt-gF9" id="b36-9H-wk4"/>
+                        <outlet property="defaultImageButton" destination="lWX-IW-JuM" id="v2q-OR-dh5"/>
                         <outlet property="editText" destination="zj4-0p-sza" id="9vZ-p5-mRv"/>
                         <outlet property="password" destination="HPJ-fA-E9h" id="R63-PV-g6A"/>
                         <outlet property="prodName" destination="FjG-ST-euo" id="4KJ-qt-Bjy"/>
@@ -1689,7 +1862,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiM-Ez-3og" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3470" y="302"/>
+            <point key="canvasLocation" x="3469.53125" y="301.7578125"/>
         </scene>
         <!--Levantamiento Controller-->
         <scene sceneID="IFv-F2-Kyv">
@@ -1725,7 +1898,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="Xhy-gb-ILT">
-                                <rect key="frame" x="105" y="560" width="576" height="54"/>
+                                <rect key="frame" x="94" y="560" width="587" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1748,24 +1921,11 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <connections>
-                                    <action selector="isPasswordValid:" destination="IDx-6M-gGX" eventType="editingChanged" id="tb6-37-tBa"/>
+                                    <action selector="isPasswordValid:" destination="IDx-6M-gGX" eventType="editingChanged" id="VWk-g9-AyG"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XXV-3a-btS">
-                                <rect key="frame" x="689" y="560" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="editText:" destination="IDx-6M-gGX" eventType="touchDown" id="IlK-sJ-h0y"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hcA-Md-yrZ">
-                                <rect key="frame" x="255" y="458" width="259" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36340884350000002" green="0.44930983670000002" blue="0.2057133521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" id="jxl-Mv-9OE">
-                                <rect key="frame" x="96" y="458" width="576" height="57"/>
+                                <rect key="frame" x="96" y="446" width="576" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre">
@@ -1778,15 +1938,42 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XXV-3a-btS">
+                                <rect key="frame" x="689" y="560" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="editText:" destination="IDx-6M-gGX" eventType="touchDown" id="IlK-sJ-h0y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TQg-ha-R3Q">
+                                <rect key="frame" x="607" y="516" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="IDx-6M-gGX" eventType="touchUpInside" id="Lvg-x6-mdo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SZK-xT-4GO">
+                                <rect key="frame" x="615" y="479" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="IDx-6M-gGX" eventType="touchUpInside" id="tgt-SO-8jU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="dJg-YC-JGp"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="wTC-Te-wzK" id="rt2-bj-Ejl"/>
+                        <outlet property="changeImageButton" destination="TQg-ha-R3Q" id="IBd-9c-lBu"/>
                         <outlet property="content1" destination="vYI-ph-WlO" id="22Q-55-IJJ"/>
                         <outlet property="content2" destination="eQE-r8-tnR" id="DaI-hu-fG9"/>
+                        <outlet property="defaultImageButton" destination="SZK-xT-4GO" id="ID2-0y-IZ0"/>
                         <outlet property="editText" destination="XXV-3a-btS" id="cob-yo-1tS"/>
-                        <outlet property="password" destination="wX9-Cm-XyN" id="4sQ-Zz-Gb3"/>
+                        <outlet property="password" destination="wX9-Cm-XyN" id="qRz-6t-eJm"/>
                         <outlet property="prodName" destination="jxl-Mv-9OE" id="wn4-1q-Kko"/>
                         <outlet property="title1" destination="Xhy-gb-ILT" id="M3D-ar-NTJ"/>
                         <outlet property="title2" destination="mho-cR-cBL" id="unj-Is-QeY"/>
@@ -1794,7 +1981,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJS-oq-mmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4163" y="302"/>
+            <point key="canvasLocation" x="4162.5" y="301.7578125"/>
         </scene>
         <!--Reafirmacion Muslos Controller-->
         <scene sceneID="ahW-p5-urF">
@@ -1830,7 +2017,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Titulo1" textAlignment="center" id="GaN-hu-zC8">
-                                <rect key="frame" x="97" y="561" width="576" height="54"/>
+                                <rect key="frame" x="86" y="561" width="587" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.20784313730000001" green="0.10980392160000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1856,21 +2043,8 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                     <action selector="isPasswordValid:" destination="HXt-4G-bsr" eventType="editingChanged" id="coe-8L-lQK"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WZU-US-e9t">
-                                <rect key="frame" x="681" y="561" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="editText:" destination="HXt-4G-bsr" eventType="touchDown" id="O5r-8k-0ne"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="N99-0X-pMz">
-                                <rect key="frame" x="250" y="459" width="259" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36340884350000002" green="0.44930983670000002" blue="0.2057133521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" id="Mau-le-kSh">
-                                <rect key="frame" x="86" y="459" width="576" height="57"/>
+                                <rect key="frame" x="86" y="436" width="576" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre">
@@ -1883,13 +2057,40 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WZU-US-e9t">
+                                <rect key="frame" x="681" y="561" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="editText:" destination="HXt-4G-bsr" eventType="touchDown" id="O5r-8k-0ne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h37-fZ-Qbc">
+                                <rect key="frame" x="599" y="486" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Imagen"/>
+                                <connections>
+                                    <action selector="onClickChangeImg:" destination="HXt-4G-bsr" eventType="touchUpInside" id="FXS-E3-kFo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qy5-Gf-JLk">
+                                <rect key="frame" x="607" y="449" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Imagen Default"/>
+                                <connections>
+                                    <action selector="restoreImage:" destination="HXt-4G-bsr" eventType="touchUpInside" id="7KR-Mo-HSO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="2NL-Lt-cps"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="uxi-6K-TxF" id="WVp-8N-WBH"/>
+                        <outlet property="changeImageButton" destination="h37-fZ-Qbc" id="HAH-VG-6iU"/>
                         <outlet property="content1" destination="mDf-XL-TF5" id="ecU-b1-KBq"/>
                         <outlet property="content2" destination="vI4-Rx-a3z" id="QRi-ZM-oxG"/>
+                        <outlet property="defaultImageButton" destination="qy5-Gf-JLk" id="KkS-ot-crW"/>
                         <outlet property="editText" destination="WZU-US-e9t" id="gR4-Ls-jJO"/>
                         <outlet property="password" destination="QpL-bf-nmo" id="NFL-1H-Tab"/>
                         <outlet property="prodName" destination="Mau-le-kSh" id="yjQ-u0-E9D"/>
@@ -1899,7 +2100,7 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTF-1S-OmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4140" y="-383"/>
+            <point key="canvasLocation" x="4139.84375" y="-383.203125"/>
         </scene>
         <!--Tratamiento-->
         <scene sceneID="uLh-Zy-OHN">
@@ -1974,7 +2175,8 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
         <image name="treatment" width="1538" height="2050"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="We8-00-ZTo"/>
-        <segue reference="tPt-RD-hH6"/>
+        <segue reference="vq5-hH-cyv"/>
+        <segue reference="OPc-je-ltc"/>
+        <segue reference="sr5-CL-hoT"/>
     </inferredMetricsTieBreakers>
 </document>

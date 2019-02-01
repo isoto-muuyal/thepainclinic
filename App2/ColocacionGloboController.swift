@@ -16,7 +16,7 @@ class ColocacionGloboController: UIViewController {
     // Get Password
     let mainView = MainViewController()
     var pwd:String = ""
-    var globoService: Service?
+    var myService: Service?
     var code: String?
     var imagePicker = UIImagePickerController()
     var image:String!
@@ -43,18 +43,18 @@ class ColocacionGloboController: UIViewController {
         changeImageButton.isHidden = true
 
         pwd = mainView.password
-        globoService = servicesDao.getServiceByCode(code2: "cdpcolocacion")
+        myService = servicesDao.getServiceByCode(code2: "cdpcolocacion")
         print("ColocacionGloboController loaded")
         print("Setting fields")
         password.isHidden = true
-        prodName.text = globoService?.prodName
-        title1.text = globoService?.title1
-        title2.text = globoService?.title2
-        content1.text = globoService?.content1!
-        content2.text = globoService?.content2
-        code = globoService?.code!
-
-        backgroundImage.image = fileStorageService.getImageFromDocumentDirectory(name: image!)
+        prodName.text = myService?.prodName
+        title1.text = myService?.title1
+        title2.text = myService?.title2
+        content1.text = myService?.content1!
+        content2.text = myService?.content2
+        code = myService?.code!
+        image = myService?.image!
+        backgroundImage.image = fileStorageService.getImageFromDocumentDirectory(name: code!)
         
         print("Disable text fields ")
         content1.isEditable = false
@@ -90,7 +90,7 @@ class ColocacionGloboController: UIViewController {
                 title2: title2.text!,
                 content1: content1.text!,
                 content2: content2.text!,
-                image: globoService?.image
+                image: image
             ))
         }
     }
@@ -107,7 +107,7 @@ class ColocacionGloboController: UIViewController {
             title2.isEditable = true
             defaultImageButton.isHidden = false
             changeImageButton.isHidden = false
-            editText.titleLabel?.text = "Save"
+            editText.titleLabel?.text = "."
         } else {
             print("Password is not valid")
         }
@@ -121,10 +121,10 @@ class ColocacionGloboController: UIViewController {
     
     @IBAction func restoreImage(_ sender: Any) {
         image = "treatment"
-        globoService?.image = image
+        myService?.image = image
         backgroundImage.image = UIImage(named: image)
+        fileStorageService.saveImageDocumentDirectory(image: backgroundImage.image!, imageName: code!)
     }
-    
     
     @IBAction func getImageFromDirectory(_ sender: Any) {
         print("Requesting file")

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "1B4F7787216EEA080045C8FE"
                BuildableName = "App2.app"
                BlueprintName = "App2"
-               ReferencedContainer = "container:App2.xcodeproj">
+               ReferencedContainer = "container:The Clinic Pain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "1B4F779B216EEA0A0045C8FE"
                BuildableName = "App2Tests.xctest"
                BlueprintName = "App2Tests"
-               ReferencedContainer = "container:App2.xcodeproj">
+               ReferencedContainer = "container:The Clinic Pain.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "1B4F77A6216EEA0A0045C8FE"
                BuildableName = "App2UITests.xctest"
                BlueprintName = "App2UITests"
-               ReferencedContainer = "container:App2.xcodeproj">
+               ReferencedContainer = "container:The Clinic Pain.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "1B4F7787216EEA080045C8FE"
             BuildableName = "App2.app"
             BlueprintName = "App2"
-            ReferencedContainer = "container:App2.xcodeproj">
+            ReferencedContainer = "container:The Clinic Pain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "1B4F7787216EEA080045C8FE"
             BuildableName = "App2.app"
             BlueprintName = "App2"
-            ReferencedContainer = "container:App2.xcodeproj">
+            ReferencedContainer = "container:The Clinic Pain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "1B4F7787216EEA080045C8FE"
             BuildableName = "App2.app"
             BlueprintName = "App2"
-            ReferencedContainer = "container:App2.xcodeproj">
+            ReferencedContainer = "container:The Clinic Pain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -308,7 +308,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B4F7783216EEA080045C8FE /* Build configuration list for PBXProject "App2" */;
+			buildConfigurationList = 1B4F7783216EEA080045C8FE /* Build configuration list for PBXProject "The Clinic Pain" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -689,7 +689,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B4F7783216EEA080045C8FE /* Build configuration list for PBXProject "App2" */ = {
+		1B4F7783216EEA080045C8FE /* Build configuration list for PBXProject "The Clinic Pain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B4F77AE216EEA0A0045C8FE /* Debug */,

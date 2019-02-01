@@ -42,15 +42,17 @@ class FileStorageService: UIViewController{
         print("------------ Load image ---------------")
         print("------------ Loading image: " + name)
         let fileManager = FileManager.default
-        var image: UIImage = UIImage(named: "treatment")!
+        var image: UIImage
+        
         let imagePath = (self.getDirectoryPath() as NSURL).appendingPathComponent(name)
         let urlString: String = imagePath!.absoluteString
         if fileManager.fileExists(atPath: urlString) {
             image = UIImage(contentsOfFile: urlString)!
             print("------------ Image found and returned")
-        } else {
+        } else if (name.contains("cdd")){
             image = UIImage(named: "item")!
-            print("Default treatment image returned")
+        } else {
+            image = UIImage(named: "treatment")!
         }
         return image
     }
