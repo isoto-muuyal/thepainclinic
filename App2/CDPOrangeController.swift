@@ -120,7 +120,7 @@ class CDPOrangeController:UIViewController {
     }
     
     @IBAction func restoreImage(_ sender: Any) {
-        image = "treatment"
+        image = "item"
         myService?.image = image
         backgroundImage.image = UIImage(named: image)
         fileStorageService.saveImageDocumentDirectory(image: backgroundImage.image!, imageName: code!)
