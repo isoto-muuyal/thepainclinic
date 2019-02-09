@@ -9,44 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--The Clinic Pain-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" clipsSubviews="YES" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="V4i-uR-Ec1">
-                                <rect key="frame" x="-8" y="33" width="67" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40493210289999998" green="1" blue="0.32783575180000002" alpha="0.43186069539999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="Iniciar">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZE-fO-uHE"/>
-                                    <segue destination="3u3-3D-zWT" kind="modal" id="tPt-RD-hH6"/>
-                                </connections>
-                            </button>
-                            <imageView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clients" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Li7-2b-vyp">
-                                <rect key="frame" x="0.0" y="20" width="72" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="The Clinic Pain" id="8nt-et-nhI"/>
-                    <connections>
-                        <outlet property="mainLogo" destination="Li7-2b-vyp" id="Mqq-wk-TI7"/>
-                        <outlet property="mainView" destination="8bC-Xf-vdC" id="poW-aP-MWP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-20.3125" y="94.3359375"/>
-        </scene>
         <!--Title-->
         <scene sceneID="5x0-rm-bP1">
             <objects>
@@ -75,13 +37,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="euK-ux-jQm" userLabel="Button registro">
-                                <rect key="frame" x="586" y="78" width="141" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Sl-zk-H9i" userLabel="Button control de peso">
                                 <rect key="frame" x="0.0" y="868" width="768" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -102,9 +57,6 @@
                                 <rect key="frame" x="551" y="0.0" width="176" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Page View Controller Test"/>
-                                <connections>
-                                    <segue destination="q5F-Ih-HPN" kind="push" id="tcC-Ru-jyA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ChA-T3-4yP">
                                 <rect key="frame" x="586" y="91" width="123" height="51"/>
@@ -436,38 +388,6 @@
             </objects>
             <point key="canvasLocation" x="2732.8125" y="-1308.3984375"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="mz1-8W-yYH">
-            <objects>
-                <viewController restorationIdentifier="page2" storyboardIdentifier="page2" id="gCK-Y5-GUC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ka1-f2-Csc">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tratamientos" id="Y77-XL-ri3">
-                                <rect key="frame" x="40" y="74" width="708" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" text="..dfgdsfgsdfgsdfg" textAlignment="justified" adjustsFontForContentSizeCategory="YES" id="BaX-tT-Uoh">
-                                <rect key="frame" x="103" y="677" width="563" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97647058823529409" green="0.89803921568627454" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="description" destination="BaX-tT-Uoh" id="K8k-60-6In"/>
-                        <outlet property="image" destination="Y77-XL-ri3" id="VWV-qz-zQ2"/>
-                        <outlet property="lblDescription" destination="BaX-tT-Uoh" id="U9s-45-5UM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="goR-P6-o5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-154" y="793"/>
-        </scene>
         <!--Colocacion Globo Controller-->
         <scene sceneID="9of-iX-6ie">
             <objects>
@@ -589,38 +509,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynf-7q-HYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1265.625" y="669.7265625"/>
-        </scene>
-        <!--One-->
-        <scene sceneID="TjD-En-cgb">
-            <objects>
-                <viewController storyboardIdentifier="CPMOne" id="76V-UY-fgq" customClass="CPMOne" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="klJ-Et-1Ok">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" text="..." textAlignment="justified" adjustsFontForContentSizeCategory="YES" id="xXO-qf-Z7f">
-                                <rect key="frame" x="102" y="763" width="821" height="445"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DcV-30-k8K">
-                                <rect key="frame" x="102" y="166" width="708" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Xn4-SK-3Dl"/>
-                    <connections>
-                        <outlet property="CPMOneImage" destination="DcV-30-k8K" id="q7s-QN-dbG"/>
-                        <outlet property="CPMOneText" destination="xXO-qf-Z7f" id="3PQ-mf-oqi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PdA-rx-peU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-154" y="757"/>
         </scene>
         <!--Orange Controller-->
         <scene sceneID="cqa-Rc-tPt">
@@ -2110,48 +1998,6 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
             </objects>
             <point key="canvasLocation" x="4139.84375" y="-383.203125"/>
         </scene>
-        <!--Tratamiento-->
-        <scene sceneID="uLh-Zy-OHN">
-            <objects>
-                <viewController storyboardIdentifier="OneTreatmentcontroller" title="Tratamiento" id="pji-Tz-S4c" customClass="OneTreatmentcontroller" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kfe-7J-HLP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Dc0-81-vRX">
-                                <rect key="frame" x="133" y="169" width="759" height="577"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contentLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="5OC-lr-QEX">
-                                <rect key="frame" x="133" y="775" width="779" height="510"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.91764705879999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="UvO-lG-mtD"/>
-                    <connections>
-                        <outlet property="contentImage" destination="Dc0-81-vRX" id="jmS-f3-ANm"/>
-                        <outlet property="contentLabel" destination="5OC-lr-QEX" id="PgP-aQ-uCy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-6H-ZpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-155" y="837"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="Swa-pB-mv6">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="q5F-Ih-HPN" customClass="PageViewController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7Vp-fF-sxm" colorLabel="IBBuiltInLabel-Green"/>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxz-cP-eYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="630" y="756"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="UMn-Nf-rUI">
             <objects>
@@ -2173,17 +2019,15 @@ Cuando el hígado sufre daño, estos "tóxicos" se pueden acumular en el torrent
         </scene>
     </scenes>
     <resources>
-        <image name="Clients" width="440" height="370"/>
         <image name="NEW-control-de-peso" width="2184" height="2708"/>
         <image name="NEW-control-del-dolor" width="2184" height="2708"/>
         <image name="NEW-medicina-estetica" width="2184" height="2708"/>
         <image name="NEW-portada" width="2184" height="2708"/>
-        <image name="Tratamientos" width="229" height="224"/>
         <image name="item" width="1536" height="2050"/>
         <image name="treatment" width="1538" height="2050"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gEL-Mc-blF"/>
-        <segue reference="tPt-RD-hH6"/>
+        <segue reference="OPc-je-ltc"/>
+        <segue reference="3bU-Je-oVf"/>
     </inferredMetricsTieBreakers>
 </document>
